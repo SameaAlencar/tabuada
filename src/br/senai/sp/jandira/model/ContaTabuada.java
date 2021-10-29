@@ -24,16 +24,18 @@ public class ContaTabuada {
 
 	public String[] calcular() {
 
-		String t[] = new String[maximoMultiplicador + 1];
+		String tabuada[] = new String[maximoMultiplicador + 1];
 
 		while (contador <= maximoMultiplicador) {
+			
 			int produto = multiplicando * contador;
 
-			t[contador] = multiplicando + " X " + contador + " = " + produto;
+			tabuada[contador] = multiplicando + " X " + contador + " = " + produto;
 
 			contador++;
 		}
-		return t;
+		
+		return tabuada;
 
 	}
 
